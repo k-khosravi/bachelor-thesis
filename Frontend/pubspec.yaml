@@ -1,0 +1,49 @@
+name: find_me
+description: Android Application For WiFi Indoor Positioning.
+
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  circular_countdown_timer: ^0.2.0
+  flutter:
+    sdk: flutter
+  flutter_animation_progress_bar: ^2.0.1
+  http: ^0.13.3
+  intl: ^0.17.0
+  intro_slider: ^3.0.2
+  location: ^4.3.0
+  shared_preferences: ^2.0.6
+  wifi_plugin:
+    git:
+      url: https://github.com/zeinab-sheikhi/wifi-plugin.git
+      ref: master
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.9.1
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+     - assets/images/app_intro/offline_phase.jpg
+     - assets/images/app_intro/online_phase.png
+     - assets/images/app_intro/wifi_scanner.png
+     - assets/images/launcher_icon/icon.png
+     - assets/images/floor_map.jpg
+     - assets/images/logo.png
+     - assets/images/map_marker.png
+     - assets/images/wifi.gif
+     - assets/images/wifi_signal.png
+  fonts:
+    - family: MyFlutterApp
+      fonts:
+       - asset: assets/fonts/MyFlutterApp.ttf
+flutter_icons:
+  android: true
+  ios: false
+  image_path: "assets/images/launcher_icon/icon.png"
